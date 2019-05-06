@@ -4,6 +4,7 @@ My little Queue
 
 my_enqueue = []
 
+
 def enqueue(elem) -> None:
 	"""
 	Operation that add element to the end of the queue
@@ -12,8 +13,7 @@ def enqueue(elem) -> None:
 	:return: Nothing
 	"""
 	if my_enqueue is not None:
-	    my_enqueue.append(elem)
-
+		my_enqueue.append(elem)
 
 
 def dequeue():
@@ -22,8 +22,8 @@ def dequeue():
 
 	:return: dequeued element
 	"""
-	if my_enqueue != []:
-	    return my_enqueue.pop(0)
+	if my_enqueue:
+		return my_enqueue.pop(0)
 
 
 def peek(ind: int = 0):

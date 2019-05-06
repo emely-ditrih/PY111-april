@@ -42,7 +42,6 @@ def peek(ind: int = 0, priority: int = 0):
 	:param ind: index of element (count from the beginning)
 	:param priority: element priority
 	:return: peeked element
-
 	"""
 	global my_priority_enqueue
 	local_counter = 0
@@ -62,3 +61,18 @@ def clear() -> None:
 	if my_priority_enqueue is not None:
 		my_priority_enqueue.clear()
 	return None
+
+print(my_priority_enqueue)
+clear()
+print(my_priority_enqueue)
+enqueue('new_elem')
+print(my_priority_enqueue)
+enqueue('new_elem2', 1)
+print(my_priority_enqueue)
+enqueue('new_elem2', 4)
+print(my_priority_enqueue)
+print(dequeue())
+print(my_priority_enqueue)
+print(peek(0, 1))
+print(peek(1, 1))
+print(peek(0, 3))
